@@ -1,12 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
+<!-- The three working pages are Index, Catalogue and Cart -->
+
 <body>
-    
+    <section class="top">
+        <div class="logo">
+            <a href="index.html">
+                <img src="media/images/gift-logo.png" alt="" class="logo-img">
+                <div class="logo-overlay"></div>
+            </a>
+            <a href="" class="logo-t">
+                Don
+            </a>
+        </div>
+        <div class="search">
+            <form method="get">
+                <input type="text" class="search-input" placeholder="What are you looking for?">
+                <button class="search-btn">Search</button>
+            </form>
+        </div>
+        <div class="tray">
+            <span class="basket"><a href="cart.html">Cart</a></span>
+            <img src="media/images/shopping-basket.png" alt="" class="shopping-basket">
+            <sup>2 <span class="circle-sup"></span></sup>
+        </div>
+        <div class="login">
+            <a href="" class="login-btn">Login</a>
+        </div>
+    </section>
+    <section class="container row">
+        <div class="aside">
+            <header class="ha">Filters</header>
+            <div class="brand">
+                <header style="font-size: larger; margin-bottom: 10px;">Brand</header>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="scales" name="scales" checked>
+                        <label for="scales">Scales</label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" id="horns" name="horns">
+                        <label for="horns">Horns</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="2" name="2">
+                        <label for="2">Two</label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" id="3" name="3">
+                        <label for="3">Three</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="other">
+                <header style="font-size: larger; margin-bottom: 10px;">Specs</header>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="specs" name="specs" checked>
+                        <label for="specs">Specs</label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" id="else" name="else">
+                        <label for="else">Else</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="4" name="4">
+                        <label for="4">Four</label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" id="5" name="5">
+                        <label for="5">Five</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="card">
+                <img src="media/images/cart-item-1.webp" alt="">
+                <div class="card-content">
+                    <h2 class="card-title">Earrings</h2>
+                    <p class="card-body">
+                        This is the working link. <br><br>
+                        If anything is broken in Firefox, try Chrome
+                        <br>
+                    </p>
+                    <a href="cart.html" class="button">Details</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="media/images/toys.jpg" alt="">
+                <div class="card-content">
+                    <h2 class="card-title">Something</h2>
+                    <p class="card-body">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat explicabo quis reprehenderit.
+                    </p>
+                    <a href="" class="button">Buy</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="media/images/artist.jpg" alt="">
+                <div class="card-content">
+                    <h2 class="card-title">Something</h2>
+                    <p class="card-body">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat explicabo quis reprehenderit.
+                    </p>
+                    <a href="" class="button">Buy</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="media/images/peony_flowers_bouquet.webp" alt="">
+                <div class="card-content">
+                    <h2 class="card-title">Something</h2>
+                    <p class="card-body">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat explicabo quis reprehenderit.
+                    </p>
+                    <a href="" class="button">Buy</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="media/images/gifts.jpg" alt="">
+                <div class="card-content">
+                    <h2 class="card-title">Something</h2>
+                    <p class="card-body">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat explicabo quis reprehenderit.
+                    </p>
+                    <a href="" class="button">Buy</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="media/images/consoles.jpg" alt="">
+                <div class="card-content">
+                    <h2 class="card-title">Something</h2>
+                    <p class="card-body">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat explicabo quis reprehenderit.
+                    </p>
+                    <a href="" class="button">Buy</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="media/images/fruit_basket.jpg" alt="">
+                <div class="card-content">
+                    <h2 class="card-title">Something</h2>
+                    <p class="card-body">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat explicabo quis reprehenderit.
+                    </p>
+                    <a href="" class="button">Buy</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="media/images/sidekix-media-WgkA3CSFrjc-unsplash.jpg" alt="">
+                <div class="card-content">
+                    <h2 class="card-title">Something</h2>
+                    <p class="card-body">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat explicabo quis reprehenderit.
+                    </p>
+                    <a href="" class="button">Buy</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="media/images/gtoys.jpg" alt="">
+                <div class="card-content">
+                    <h2 class="card-title">Something</h2>
+                    <p class="card-body">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat explicabo quis reprehenderit.
+                    </p>
+                    <a href="" class="button">Buy</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <section class="footer row" style="margin-left: 20vw; width: 70vw;">
+        <div class="cardi">
+            <img src="media/images/leaf.png" alt="" class="icon">
+            <span class="block">Shop Differently</span>
+            <p class="comment">Exceptional range of trusted sustainable brands.</p>
+            </img>
+        </div>
+        <div class="cardi">
+            <img src="media/images/call.png" alt="" class="icon">
+            <span class="block">Call Us</span>
+            <p class="comment"><a href="https://wa.link/bruf1k">+254706649607</a></p>
+            </img>
+        </div>
+        <div class="cardi">
+            <img src="media/images/trade.png" alt="" class="icon">
+            <span class="block">Sell</span>
+            <p class="comment">You can sell your products via us, big and small all and one</p>
+            </img>
+        </div>
+        <div class="cardi">
+            <img src="media/images/chat.png" alt="" class="icon">
+            <span class="block">Chat</span>
+            <p class="comment">Talk to one of us</p>
+            </img>
+        </div>
+    </section>
+    <script src="main.js"></script>
 </body>
+
 </html>
