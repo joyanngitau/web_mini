@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+:root {
+    /* --link-color: blue; */
+    --link-color: hsl(324, 100%, 38%);
+    --link-color-hover: hsl(324, 31%, 10%);
+    --all-bg-color: hsl(0, 0%, 97%);
+    --theme-color: hsl(324, 92%, 60%);
+}
+
+* {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--all-bg-color);
+}
+
+/* main css */
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+a:hover {
+    color: var(--link-color-hover);
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 5vw;
+}
+
+.logo-img {
+    width: 50px;
+}
+
+.logo-t {
+    margin-left: 10px;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 0.3ch;
+    font-weight: 800;
+    font-size: 1.7rem;
+    font-style: italic;
+    font-family: cursive, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.logo-overlay {
+    width: 70px;
+    height: 70px;
+    background-color: #ec008e52;
+    position: absolute;
+    margin-top: -62px;
+    margin-left: -10px;
+    border-radius: 50%;
+}
+
+.search-btn {
+    font-size: 1.05rem;
+    color: white;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    margin-left: -74px;
+    height: 50px;
+    border: none;
+    background-color: #f73cac;
+    border-top: #f73cac solid 2px;
+    border-right: #f73cac solid 2px;
+    border-bottom: #f73cac solid 2px;
+    transition: ease 500ms;
+}
+
+.search-btn:hover {
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    transition: ease 100ms;
+}
+
+.search input {
+    border: #f73cac solid 2px;
+    width: 700px;
+    height: 50px;
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+.search input:focus {
+    outline: none;
+}
+
+.tray {
+    display: inline-flex;
+}
+
+.basket {
+    display: inline-block;
+    height: 20px;
+    font-size: 1.1rem;
+    margin-right: 5px;
+}
+
+.shopping-basket {
+    width: 20px;
+    height: 20px;
+}
+
+sup {
+    margin-left: 2px;
+}
+
+.circle-sup {
+    clip-path: circle(50% at 50% 50%);
+    background-color: #fa0f9c85;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    margin-left: -10.5px;
+    margin-top: 3px;
+}
+
+.login {
+    margin-right: 10vw;
+    font-size: 1.1rem;
+}
+
+.login-btn {
+    background-color: blue;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: blue solid 1px;
+    border-radius: 2px;
+    transition: ease 500ms;
+}
+
+.login-btn:hover {
+    color: black;
+    background-color: white;
+    transition: ease 100ms;
+}
+
+.main-nav {
+    width: 100vw;
+    padding: 0.5rem;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.nav-link a, .nav-link::after {
+    background-color: transparent;
+}
+
+.nav-link {
+    border: blue solid 1px;
+    border-radius: 5px;
+    /* padding: 0.2rem 0.7rem;     */
+    padding-top: 0.2rem;
+    padding-bottom: 0.3rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+}
+
+.nav-link::after {
+    margin-left: -3px;
+    content: "\21C2";
+    font-size: 1rem;
+    color: var(--link-color);
+}
+
+.nav-link:hover{
+    border: var(--link-color-hover) solid 1px;
+}
+
+.nav-link:hover::after {
+    color: var(--link-color-hover);
+}
+
+.dropdown {
+    position: absolute;
+    margin-left: -12.5px;
+    display: none;
+    width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link:hover .dropdown, .nav-link:focus .dropdown {
+    display: block;
+}
+
+.dd {
+    height: 40px;
+    padding-top: 15px;
+    padding-left: 5px;
+}
+
+.dd a {
+    display: block;
+    color: black;
+    background-color: transparent;
+}
+
+.dropdown div:hover {
+    cursor: pointer;
+    background-color: ivory;
+    transition: ease-in 200ms;
+}
+
+.dd:nth-child(odd) {
+    background-color: #ddd;
+}
+
+.dd:nth-child(even) {
+    background-color: rgb(231, 231, 231);
+}
+
+.centered {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.main-grid {
+    margin-top: 14px;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 50px;
+}
+
+.main-grid div{
+    cursor: pointer;
+}
+
+.big {
+    width: 580px;
+    height: 425px;
+    grid-row: 1/-1;
+}
+
+.big-img {
+    width: inherit;
+    height: inherit;
+    object-fit: fill;
+    gap: 1rem;
+
+    transition: ease 300ms;
+}
+
+.big-img:hover{
+    transform: scale(1.05);
+
+    transition: transform 400ms ease;
+}
+
+.grid-img1, .grid-img2 {
+    height: 200px;
+    width: 300px;
+}
+
+.img-2 {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    transition: ease 250ms;
+}
+
+.img-3 {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    transition: ease 250ms;
+}
+
+.img-2:hover, .img-3:hover{
+    transform: scale(1.3);
+    object-fit: fill;
+    
+    transition: transform 500ms ease;
+}
+
+.categories {
+    padding: 1rem 3rem;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.circle img {
+    clip-path: circle(40% at 50% 50%);
+    cursor: pointer;
+
+    transition: ease 500ms;
+}
+
+.circle img:hover{
+    transform: scale(0.8);
+
+    transition: ease 500ms;
+}
+
+.circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.row {
+    display: flex;
+}
+
+.footer {
+    justify-content: space-around;
+    background-color: #fc7cc9;
+    width: 80vw;
+    min-height: 150px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 1rem;
+}
+
+.footer * {
+    background-color: #fc7cc9;
+}
+
+.card {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.icon {
+    align-self: center;
+    margin-top: 15px;
+    width: 50px;
+    height: 50px;
+}
+
+.card span, .card p {
+    text-align: center;
+}
+
+.comment {
+    width: 20ch;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.divider {
+    width: 60vw;
+    height: 2px;
+    background-color: #fc7cc9;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* end main css */
+
+/* cart.html css */
+
+.cart-info{
+    justify-content: space-between;
+    padding: 0 15vw;
+}
+
+.cart{
+    font-family: 'Cabin', sans-serif;
+    margin-top: 50px;
+}
+
+header, .sub{
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1.125;
+}
+
+.checkout{
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+    color: white;
+    background-color: var(--theme-color);
+    padding: 0.6rem 1.7rem;
+}
+
+
+.checkout:hover{
+    cursor: pointer;
+    color: black;
+    background-color: white;
+}
+
+.continue{
+    color: var(--link-color);
+    text-align: center;
+}
+
+.continue:hover{
+    color: var(--link-color-hover);
+}
+
+.rect{
+    border: 2px solid rgb(197, 197, 197);
+    width: 70vw;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rct{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.number{
+    margin-right: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.plus,.minus{
+    color: white;
+    background-color: var(--theme-color);
+    font-size: 30px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--theme-color);
+    border-radius: 2%;
+}
+
+.plus:hover,.minus:hover{
+    cursor: pointer;
+    background-color: var(--link-color-hover);
+}
+
+.number-of-items{
+    text-align: center;
+    border: none;
+    display: inline-block;
+    outline: 1px solid rgb(160, 146, 146);
+    height: 38px;
+    width: 50px;
+    z-index: -1;
+}
+
+.item-name, .price{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.125;
+}
+
+/* end cart css */
+
+/* catalogue.html css */
+
+/* end catalougue.html css */
