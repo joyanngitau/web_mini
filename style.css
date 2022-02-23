@@ -306,12 +306,12 @@ sup {
 .circle img {
     clip-path: circle(40% at 50% 50%);
     cursor: pointer;
-    transition: ease 500ms;
+    transition: ease-out 500ms;
 }
 
 .circle img:hover {
     transform: scale(0.8);
-    transition: ease 500ms;
+    transition: ease-out 500ms;
 }
 
 .circle {
